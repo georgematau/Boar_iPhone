@@ -1,0 +1,63 @@
+//
+// Prefix header for all source files of the 'Boar' target in the 'Boar' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+// Web links
+#define LINK_HOME @"http://theboar.org/?json=1"
+#define LINK_NEWS @"http://theboar.org/category/news/?json=1"
+#define LINK_COMMENT @"http://theboar.org/category/comment/?json=1"
+#define LINK_FEATURES @"http://theboar.org/category/features/?json=1"
+#define LINK_LIFESTYLE @"http://theboar.org/category/lifestyle/?json=1"
+#define LINK_MONEY @"http://theboar.org/category/money/?json=1"
+#define LINK_ARTS @"http://theboar.org/category/arts/?json=1"
+#define LINK_BOOKS @"http://theboar.org/category/books/?json=1"
+#define LINK_FILM @"http://theboar.org/category/film/?json=1"
+#define LINK_GAMES @"http://theboar.org/category/games/?json=1"
+#define LINK_MUSIC @"http://theboar.org/category/music/?json=1"
+#define LINK_SCIENCE_TECH @"http://theboar.org/category/science-tech/?json=1"
+#define LINK_TRAVEL @"http://theboar.org/category/travel/?json=1"
+#define LINK_TV @"http://theboar.org/category/tv/?json=1"
+#define LINK_SPORT @"http://theboar.org/category/sport/?json=1"
+#define LINK_PHOTOGRAPHY @"http://theboar.org/category/photography/?json=1"
+
+// Other
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0))
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+
+// Landscape sizes
+#define LAND_IPHONE5_DIF 228
+#define LAND_IPHONE_DIF 160
+#define LAND_DIF_5_4S 88
+
+// Colors
+#define COLOR_NEWS @"#C4161C"
+#define COLOR_COMMENT @"#FFC20E"
+#define COLOR_FEATURES @"#8dc63f"
+#define COLOR_LIFESTYLE @"#FF00FF"
+#define COLOR_MONEY @"#F26522"
+#define COLOR_ARTS @"#F26522"
+#define COLOR_BOOKS @"#008fd5"
+#define COLOR_FILM @"#790020"
+#define COLOR_GAMES @"#0096a6"
+#define COLOR_MUSIC @"#ed1c24"
+#define COLOR_SCIENCE_TECH @"#ed1c24"
+#define COLOR_TRAVEL @"#1e196a"
+#define COLOR_TV @"#92278f"
+#define COLOR_SPORT @"#00a651"
+#define COLOR_PHOTOGRAPHY @"#777777"
+
+// Messages
+#define NO_FEEDS @"You need Internet connection in order to view the lastest news!"
+#define NO_REFRESH @"You need Internet connection in order to refresh the news!"
+#define NO_ARTICLES_IN_SECTION @"There are no articles in this section"
