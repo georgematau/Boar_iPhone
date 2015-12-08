@@ -13,27 +13,47 @@
     #import <Foundation/Foundation.h>
 #endif
 
+// API links
+#define LINK_HOME @"http://theboar.org/"
+#define LINK_NEWS @"http://theboar.org/category/news/"
+#define LINK_COMMENT @"http://theboar.org/category/comment/"
+#define LINK_FEATURES @"http://theboar.org/category/features/"
+#define LINK_LIFESTYLE @"http://theboar.org/category/lifestyle/"
+#define LINK_MONEY @"http://theboar.org/category/money/"
+#define LINK_ARTS @"http://theboar.org/category/arts/"
+#define LINK_BOOKS @"http://theboar.org/category/books/"
+#define LINK_FILM @"http://theboar.org/category/film/"
+#define LINK_GAMES @"http://theboar.org/category/games/"
+#define LINK_MUSIC @"http://theboar.org/category/music/"
+#define LINK_SCIENCE_TECH @"http://theboar.org/category/science-tech/"
+#define LINK_TRAVEL @"http://theboar.org/category/travel/"
+#define LINK_TV @"http://theboar.org/category/tv/"
+#define LINK_SPORT @"http://theboar.org/category/sport/"
+#define LINK_PHOTOGRAPHY @"http://theboar.org/category/photography/"
+//#define LINK_HOME @"http://theboar.org/?json=1&page=1&count=10"
+
 // Web links
-#define LINK_HOME @"http://theboar.org/?json=1"
-#define LINK_NEWS @"http://theboar.org/category/news/?json=1"
-#define LINK_COMMENT @"http://theboar.org/category/comment/?json=1"
-#define LINK_FEATURES @"http://theboar.org/category/features/?json=1"
-#define LINK_LIFESTYLE @"http://theboar.org/category/lifestyle/?json=1"
-#define LINK_MONEY @"http://theboar.org/category/money/?json=1"
-#define LINK_ARTS @"http://theboar.org/category/arts/?json=1"
-#define LINK_BOOKS @"http://theboar.org/category/books/?json=1"
-#define LINK_FILM @"http://theboar.org/category/film/?json=1"
-#define LINK_GAMES @"http://theboar.org/category/games/?json=1"
-#define LINK_MUSIC @"http://theboar.org/category/music/?json=1"
-#define LINK_SCIENCE_TECH @"http://theboar.org/category/science-tech/?json=1"
-#define LINK_TRAVEL @"http://theboar.org/category/travel/?json=1"
-#define LINK_TV @"http://theboar.org/category/tv/?json=1"
-#define LINK_SPORT @"http://theboar.org/category/sport/?json=1"
-#define LINK_PHOTOGRAPHY @"http://theboar.org/category/photography/?json=1"
+#define WEBPAGE_HOME @"http://theboar.org/"
+#define WEBPAGE_NEWS @"http://theboar.org/news/"
+#define WEBPAGE_COMMENT @"http://theboar.org/comment/"
+#define WEBPAGE_FEATURES @"http://theboar.org/features/"
+#define WEBPAGE_LIFESTYLE @"http://theboar.org/lifestyle/"
+#define WEBPAGE_MONEY @"http://theboar.org/money/"
+#define WEBPAGE_ARTS @"http://theboar.org/arts/"
+#define WEBPAGE_BOOKS @"http://theboar.org/books/"
+#define WEBPAGE_FILM @"http://theboar.org/film/"
+#define WEBPAGE_GAMES @"http://theboar.org/games/"
+#define WEBPAGE_MUSIC @"http://theboar.org/music/"
+#define WEBPAGE_SCIENCE_TECH @"http://theboar.org/science-tech/"
+#define WEBPAGE_TRAVEL @"http://theboar.org/travel/"
+#define WEBPAGE_TV @"http://theboar.org/tv/"
+#define WEBPAGE_SPORT @"http://theboar.org/sport/"
+#define WEBPAGE_PHOTOGRAPHY @"http://theboar.org/photography/"
 
 // Other
 #define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0))
 #define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define NUMBER_ARTICLES 10
 
 // Landscape sizes
 #define LAND_IPHONE5_DIF 228
@@ -46,18 +66,30 @@
 #define COLOR_FEATURES @"#8dc63f"
 #define COLOR_LIFESTYLE @"#FF00FF"
 #define COLOR_MONEY @"#F26522"
-#define COLOR_ARTS @"#F26522"
+#define COLOR_ARTS @"#F78C31"
 #define COLOR_BOOKS @"#008fd5"
 #define COLOR_FILM @"#790020"
-#define COLOR_GAMES @"#0096a6"
+#define COLOR_GAMES @"#3FBDE0"
 #define COLOR_MUSIC @"#ed1c24"
-#define COLOR_SCIENCE_TECH @"#ed1c24"
+#define COLOR_SCIENCE_TECH @"#00ACBB"
 #define COLOR_TRAVEL @"#1e196a"
 #define COLOR_TV @"#92278f"
 #define COLOR_SPORT @"#00a651"
 #define COLOR_PHOTOGRAPHY @"#777777"
+#define COLOR_LIGHT_GREY_BG @"#EDEDED"
+
+// Key
+#define KEY_NO_INTERNET @"No Internet"
+#define KEY_NO_ARTICLES @"No articles"
+#define KEY_SEARCH @"Search"
+#define KEY_TAG @"Tag"
 
 // Messages
-#define NO_FEEDS @"You need Internet connection in order to view the lastest news!"
-#define NO_REFRESH @"You need Internet connection in order to refresh the news!"
-#define NO_ARTICLES_IN_SECTION @"There are no articles in this section"
+#define MSG_NO_FEEDS @"You need Internet connection in order to view the lastest news!"
+#define MSG_NO_REFRESH @"You need Internet connection in order to refresh the news!"
+#define MSG_NO_ARTICLES_IN_SECTION @"There are no articles in this section"
+#define MSG_NO_FAVORITES @"You have not added any articles to your favorites"
+
+// Contact
+#define EMAIL_CONTACT @"contact@theboar.org"
+#define EMAIL_APP @"apps@theboar.org"

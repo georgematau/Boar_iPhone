@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BModel.h"
 
 @interface FeedListCell : UITableViewCell
 
@@ -14,7 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ivCategory;
 @property (weak, nonatomic) IBOutlet UILabel *lblCategory;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
-@property (weak, nonatomic) IBOutlet UILabel *lblAuthor;
 @property (weak, nonatomic) IBOutlet UILabel *lblDate;
+
+- (void) displayItem:(NSDictionary*) item;
 
 @end
